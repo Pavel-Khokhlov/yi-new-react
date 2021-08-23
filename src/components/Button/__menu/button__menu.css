@@ -1,0 +1,12 @@
+.button__menu {
+  padding: 0;
+  margin: 0;
+  width: min(25px, 6vw);
+  height: min(16px, 4vw);
+  border: none;
+  background-image: url("../../../images/menu_white.png");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

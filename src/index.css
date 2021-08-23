@@ -1,0 +1,26 @@
+@import url(./vendors/normalize.css);
+@import url(./block/paragraph/paragraph.css);
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: local('Bahnschrift'), url(./vendors/Fonts/Bahnschrift.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'BankGothicMdBT-Medium';
+  src: local('BankGothicMdBT-Medium'), url(./vendors/Fonts/BankGothicMdBT-Medium.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

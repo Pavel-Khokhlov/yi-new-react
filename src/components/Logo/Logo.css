@@ -1,0 +1,7 @@
+@import url(./__header/logo__header.css);
+@import url(./__menu/logo__menu.css);
+
+.logo {
+  width: min(25px, 6vw);
+  height: min(25px, 6vw);
+}

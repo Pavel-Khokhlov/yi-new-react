@@ -1,0 +1,4 @@
+.header__icon {
+  width: min(20px, 5vw);
+  height: min(20px, 5vw);
+}

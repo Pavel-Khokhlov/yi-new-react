@@ -1,0 +1,6 @@
+.popup-menu__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: min(10px, 2vw);
+}

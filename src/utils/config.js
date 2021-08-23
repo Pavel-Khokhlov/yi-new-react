@@ -1,0 +1,1 @@
+exports.ESC_CODE = 27;

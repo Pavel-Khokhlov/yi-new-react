@@ -1,0 +1,5 @@
+.popup-menu__lang {
+  display: flex;
+  justify-content: center;
+  gap: min(10px, 2vw);
+}
