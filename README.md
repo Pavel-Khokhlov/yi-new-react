@@ -1,3 +1,3 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[YI Link](https://pavel-khokhlov.github.io/yi-new-react).
