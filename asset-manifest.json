@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7707feee.chunk.css",
+    "main.js": "/static/js/main.a05539d6.chunk.js",
+    "main.js.map": "/static/js/main.a05539d6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dac97ac6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dac97ac6.js.map",
+    "static/js/2.9ee42ee0.chunk.js": "/static/js/2.9ee42ee0.chunk.js",
+    "static/js/2.9ee42ee0.chunk.js.map": "/static/js/2.9ee42ee0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7707feee.chunk.css.map": "/static/css/main.7707feee.chunk.css.map",
+    "static/js/2.9ee42ee0.chunk.js.LICENSE.txt": "/static/js/2.9ee42ee0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/BankGothicMdBT-Medium.e2bf3a30.woff",
+    "static/media/account_white.cdc1e444.png": "/static/media/account_white.cdc1e444.png",
+    "static/media/basket_white.83db9330.png": "/static/media/basket_white.83db9330.png",
+    "static/media/Button.css": "/static/media/close.80dfd5bd.svg",
+    "static/media/cool_casual_02.b316c2ed.jpg": "/static/media/cool_casual_02.b316c2ed.jpg",
+    "static/media/logo_black.19988a41.png": "/static/media/logo_black.19988a41.png",
+    "static/media/logo_white.7a315f98.png": "/static/media/logo_white.7a315f98.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dac97ac6.js",
+    "static/js/2.9ee42ee0.chunk.js",
+    "static/css/main.7707feee.chunk.css",
+    "static/js/main.a05539d6.chunk.js"
+  ]
+}
