@@ -1,5 +1,6 @@
 @import url(./__icon/header__icon.css);
 @import url(./__nav/header__nav.css);
+@import url(./__scrolled/header__scrolled.css);
 
 .header {
   width: calc(100vw - 20px);
@@ -7,9 +8,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  transition: 1s ease-in-out;
 }

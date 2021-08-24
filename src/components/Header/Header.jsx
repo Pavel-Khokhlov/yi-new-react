@@ -11,10 +11,16 @@ import "./Header.css";
 const Header = ({ onOpenMenuClick }) => {
   const newHeader = false;
   const [lastYPos, setLastYPos] = useState(0);
+  const [headerClassName, setHeaderClassName] = useState(`header`);
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log('scrolled')
+      let scrollPosition = window.scrollY;
+      if(scrollPosition < 10) {
+        setHeaderClassName(`header`)
+      } else {
+        setHeaderClassName(`header header__scrolled`)
+      }
     }
     window.addEventListener('scroll', handleScroll, false);
     return () => {
@@ -23,7 +29,7 @@ const Header = ({ onOpenMenuClick }) => {
   }, [lastYPos])
 
   return (
-    <header className="header">
+    <header className={headerClassName}>
       <div className="header__menu">
         <Button type="button" className="button button__menu button__menu_header" onClick={onOpenMenuClick} />
       </div>
