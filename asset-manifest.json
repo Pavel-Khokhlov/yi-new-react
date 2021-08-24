@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yi-new-react/static/css/main.c4bdc0ee.chunk.css",
+    "main.css": "/yi-new-react/static/css/main.989f09b5.chunk.css",
     "main.js": "/yi-new-react/static/js/main.d167a19c.chunk.js",
     "main.js.map": "/yi-new-react/static/js/main.d167a19c.chunk.js.map",
     "runtime-main.js": "/yi-new-react/static/js/runtime-main.3cbc59e6.js",
@@ -8,7 +8,7 @@
     "static/js/2.cf1b66ca.chunk.js": "/yi-new-react/static/js/2.cf1b66ca.chunk.js",
     "static/js/2.cf1b66ca.chunk.js.map": "/yi-new-react/static/js/2.cf1b66ca.chunk.js.map",
     "index.html": "/yi-new-react/index.html",
-    "static/css/main.c4bdc0ee.chunk.css.map": "/yi-new-react/static/css/main.c4bdc0ee.chunk.css.map",
+    "static/css/main.989f09b5.chunk.css.map": "/yi-new-react/static/css/main.989f09b5.chunk.css.map",
     "static/js/2.cf1b66ca.chunk.js.LICENSE.txt": "/yi-new-react/static/js/2.cf1b66ca.chunk.js.LICENSE.txt",
     "static/media/index.css": "/yi-new-react/static/media/BankGothicMdBT-Medium.e2bf3a30.woff",
     "static/media/account_white.cdc1e444.png": "/yi-new-react/static/media/account_white.cdc1e444.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.3cbc59e6.js",
     "static/js/2.cf1b66ca.chunk.js",
-    "static/css/main.c4bdc0ee.chunk.css",
+    "static/css/main.989f09b5.chunk.css",
     "static/js/main.d167a19c.chunk.js"
   ]
 }
