@@ -56,13 +56,13 @@ const PopupMenu = ({ isOpen, onCloseMenuClick, onEngClick, onRusClick }) => {
           {translation.menu_jumpsuits}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
-          {translation.menu_dresses_skirts}
+          {translation.menu_dresses}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
           {translation.menu_jackets_shirts}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
-          {translation.menu_tops_tshirts}
+          {translation.menu_tops}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
           {translation.menu_knitted}
@@ -89,13 +89,16 @@ const PopupMenu = ({ isOpen, onCloseMenuClick, onEngClick, onRusClick }) => {
           {translation.menu_pay}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
-          {translation.menu_waiting}
+          {translation.menu_wait}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
           {translation.menu_refunds}
         </NavLink>
         <NavLink to="/" className="paragraph__menu popup-menu__link">
           {translation.menu_contacts}
+        </NavLink>
+        <NavLink to="/" className="paragraph__menu popup-menu__link" onClick={onCloseMenuClick}>
+          {translation.menu_back}
         </NavLink>
       </nav>
       <div className="popup-menu__lang">

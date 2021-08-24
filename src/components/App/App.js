@@ -15,7 +15,7 @@ import { ESC_CODE } from "../../utils/config";
 import "./App.css";
 
 const App = () => {
-  const [lang, setLang] = useState("en"); // present lang
+  const [lang, setLang] = useState("ru"); // present lang
   const [isPopupMenuOpen, setIsPopupMenuOpen] = useState(false);
 
   const handleEsc = (e) => (e.keyCode === ESC_CODE ? handleClosePopup() : "");

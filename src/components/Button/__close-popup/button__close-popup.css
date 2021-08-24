@@ -1,12 +1,12 @@
 .button__close-popup {
-  width: min(30px, 8vw);
-  height: min(30px, 8vw);
+  width: min(20px, 5vw);
+  height: min(20px, 5vw);
   border: none;
   margin: 0;
   padding: 0;
   position: absolute;
-  top: min(20px, 1vw);
-  right: min(20px, 1vw);
+  top: min(20px, 2vw);
+  right: min(20px, 2vw);
   background: transparent;
   background-image: url("../../../images/close.svg");
   background-position: center;
