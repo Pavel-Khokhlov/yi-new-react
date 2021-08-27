@@ -27,6 +27,12 @@ export const translations = {
     menu_refunds: 'REFUNDS',
     menu_contacts: 'CONTACTS',
     menu_back: 'BACK',
+    menu_en: 'Eng',
+    menu_ru: 'Rus',
+    main_collection: 'COLLECTION',
+    main_bags: 'BAGS',
+    main_accessorize: 'ACCESSORIZE',
+    main_bijouterie: 'BIJOUTERIE',
   },
   ru: {
     menu_moscow: 'Москва',
@@ -52,5 +58,11 @@ export const translations = {
     menu_refunds: 'ВОЗВРАТЫ',
     menu_contacts: 'КОНТАКТЫ',
     menu_back: 'НАЗАД',
+    menu_en: 'Анг',
+    menu_ru: 'Рус',
+    main_collection: 'КОЛЛЕКЦИЯ',
+    main_bags: 'СУМКИ',
+    main_accessorize: 'АКСЕССУАРЫ',
+    main_bijouterie: 'БИЖУТЕРИЯ',
   }
 };

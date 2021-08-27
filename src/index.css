@@ -1,5 +1,7 @@
 @import url(./vendors/normalize.css);
 @import url(./block/paragraph/paragraph.css);
+@import url(./block/text-color/text-color.css);
+@import url(./block/text-size/text-size.css);
 
 @font-face {
   font-family: 'Bahnschrift';
@@ -13,14 +15,13 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Bahnschrift';
+  font-weight: lighter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Bahnschrift';
+  font-weight: 300;
 }

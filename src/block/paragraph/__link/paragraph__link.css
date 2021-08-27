@@ -1,0 +1,7 @@
+.paragraph__link {
+  width: 100vw;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10vh;
+}
