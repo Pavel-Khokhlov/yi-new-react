@@ -5,7 +5,10 @@ import { NavLink } from "react-router-dom";
 
 import { TranslationContext } from "../../context/TranslationContext";
 
-import Foto from "../../images/cool_casual_02.jpg";
+import CollectionFoto from "../../images/cool_casual_02.jpg";
+import BagFoto from "../../images/cindy.jpg";
+import AccessorizeFoto from "../../images/accessorize.jpg";
+import BijouterieFoto from "../../images/bijouterie.jpg";
 
 import "./PageMain.css";
 
@@ -14,22 +17,22 @@ const PageMain = () => {
   const mainLinks = [
     {
       name: translation.main_collection,
-      img: Foto,
+      img: CollectionFoto,
       path: `/collection`,
     },
     {
       name: translation.main_bags,
-      img: Foto,
+      img: BagFoto,
       path: `/bags`,
     },
     {
       name: translation.main_accessorize,
-      img: Foto,
+      img: AccessorizeFoto,
       path: `/accessorize`,
     },
     {
       name: translation.main_bijouterie,
-      img: Foto,
+      img: BijouterieFoto,
       path: `/bijouterie`,
     },
   ];

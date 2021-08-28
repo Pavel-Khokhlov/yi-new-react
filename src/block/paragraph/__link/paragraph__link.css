@@ -1,7 +1,14 @@
 .paragraph__link {
-  width: 100vw;
+  font-family: 'Bahnschrift';
+  letter-spacing: 6px;
+  font-weight: 200;
+  padding: 0 10px;
   text-align: center;
   text-decoration: none;
+  line-height: 2;
   position: absolute;
-  bottom: 10vh;
+  bottom: 8vh;
+  right: 50%;
+  transform: translateX(50%);
+  border-bottom: 2px solid white;
 }
