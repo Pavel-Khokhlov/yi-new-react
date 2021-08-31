@@ -33,6 +33,11 @@ export const translations = {
     main_bags: 'BAGS',
     main_accessorize: 'ACCESSORIZE',
     main_bijouterie: 'BIJOUTERIE',
+    main_form_title: 'BE THE FIRST TO KNOW',
+    main_form_labelname: 'Enter your name',
+    main_form_labelemail: 'Enter your E-mail',
+    main_form_button: 'SUBSCRIBE',
+    main_form_privacy: 'By subscribing you confirm that you are consent with our "Privacy policy"'
   },
   ru: {
     menu_moscow: 'Москва',
@@ -64,5 +69,10 @@ export const translations = {
     main_bags: 'СУМКИ',
     main_accessorize: 'АКСЕССУАРЫ',
     main_bijouterie: 'БИЖУТЕРИЯ',
+    main_form_title: 'РАССЫЛКА',
+    main_form_labelname: 'Введите ваше имя',
+    main_form_labelemail: 'Введите ваш E-mail',
+    main_form_button: 'ПОДПИСАТЬСЯ',
+    main_form_privacy: 'Нажав на "Подписаться", Вы соглашаетесь с "Политикой конфиденциальности"'
   }
 };

@@ -16,6 +16,7 @@ import PagePay from "../PagePay/PagePay";
 import PageWait from "../PageWait/PageWait";
 import PageRefunds from "../PageRefunds/PageRefunds";
 import PageContacts from "../PageContacts/PageContacts";
+import Footer from "../Footer/Footer";
 import PopupMenu from "../PopupMenu/PopupMenu";
 
 import { ESC_CODE } from "../../utils/config";
@@ -45,12 +46,16 @@ const App = () => {
     window.removeEventListener("keydown", handleEsc);
   };
 
+  const handleSubmitClick = () => {
+    console.log(`fuck`)
+  }
+
   return (
     <TranslationContext.Provider value={translations[lang]}>
       <Header onOpenMenuClick={handleMenuClick} />
       <Switch>
         <Route exact path="/">
-          <PageMain />
+          <PageMain onSubmit={handleSubmitClick} />
         </Route>
         <Route path="/collection">
           <PageCollection />
@@ -77,6 +82,7 @@ const App = () => {
           <PageContacts />
         </Route>
       </Switch>
+      <Footer />
       <PopupMenu
         isOpen={isPopupMenuOpen}
         onCloseMenuClick={handleClosePopup}

@@ -2,6 +2,7 @@
 @import url(./__lang/button__lang.css);
 @import url(./__close-popup/button__close-popup.css);
 @import url(./__back/button__back.css);
+@import url(./__subscribe/button__subscribe.css);
 
 .button {
   /* сброс стилей */

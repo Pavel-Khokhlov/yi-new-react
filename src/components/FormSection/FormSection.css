@@ -1,0 +1,7 @@
+@import url(./__container/form__container.css);
+
+.form {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
