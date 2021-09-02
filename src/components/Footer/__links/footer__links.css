@@ -2,10 +2,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: calc(var(--vh, 1vh) * 2);
 }

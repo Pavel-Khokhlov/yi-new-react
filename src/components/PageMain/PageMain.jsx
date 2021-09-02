@@ -57,6 +57,7 @@ const PageMain = ({ onSubmit }) => {
         sendButtonName={translation.main_form_button}
         privacy={translation.main_form_privacy}
         title={translation.main_form_title}
+        paragraph={translation.main_form_paragraph}
       >
         <Input
           type="text"

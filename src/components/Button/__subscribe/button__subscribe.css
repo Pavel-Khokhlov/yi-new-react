@@ -1,5 +1,6 @@
 .button__subscribe {
   background: transparent;
-  height: 5vh;
-  border: 1px solid black;
+  height: calc(var(--vh, 1vh) * 5);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
 }

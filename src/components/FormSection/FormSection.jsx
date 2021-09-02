@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import Button from "../Button/Button";
 
 import "./FormSection.css";
@@ -6,6 +5,7 @@ import "./FormSection.css";
 const FormSection = ({
   onSubmit,
   title,
+  paragraph,
   children,
   sendButtonName,
   privacy,
@@ -17,12 +17,13 @@ const FormSection = ({
   return (
     <form onSubmit={handleSubmit} className="form">
       <div className="form__container">
-        <h2 className="form__title">{title}</h2>
+        <h2 className="title form__title">{title}</h2>
+        <p className="paragraph form__paragraph text-size__paragraph-s">{paragraph}</p>
         {children}
         <Button type="submit" className="button button__subscribe form__button">
           {sendButtonName}
         </Button>
-        <p className="form__privacy">{privacy}</p>
+        <p className="paragraph form__paragraph text-size__paragraph-s">{privacy}</p>
       </div>
     </form>
   );

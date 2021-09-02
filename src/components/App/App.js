@@ -27,6 +27,10 @@ const App = () => {
   const [lang, setLang] = useState("ru"); // present lang
   const [isPopupMenuOpen, setIsPopupMenuOpen] = useState(false);
 
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  console.log(vh);
+
   const handleEsc = (e) => (e.keyCode === ESC_CODE ? handleClosePopup() : "");
 
   const handleSetRus = () => {

@@ -4,5 +4,5 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: calc(var(--vh, 1vh) * 10);
 }

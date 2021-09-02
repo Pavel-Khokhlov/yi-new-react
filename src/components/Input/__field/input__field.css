@@ -2,13 +2,13 @@
   width: 100%;
   background-color: transparent;
   outline: none;
-  padding: 5px 0;
-  padding-left: 10px;
   margin: 0;
   font-size: min(14px, 3vw);
+  line-height: 2;
   border: none;
   border-bottom: 1px solid #a0a0a0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .input__field:focus {

@@ -4,7 +4,7 @@
 
 .header {
   width: calc(100vw - 20px);
-  height: 8vh;
+  height: calc(var(--vh, 1vh) * 8);
   position: fixed;
   top: 0;
   left: 0;
