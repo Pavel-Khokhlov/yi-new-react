@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/yi-new-react/static/css/main.2adfef67.chunk.css",
-    "main.js": "/yi-new-react/static/js/main.3b147922.chunk.js",
-    "main.js.map": "/yi-new-react/static/js/main.3b147922.chunk.js.map",
+    "main.css": "/yi-new-react/static/css/main.c594efe8.chunk.css",
+    "main.js": "/yi-new-react/static/js/main.944922b5.chunk.js",
+    "main.js.map": "/yi-new-react/static/js/main.944922b5.chunk.js.map",
     "runtime-main.js": "/yi-new-react/static/js/runtime-main.3cbc59e6.js",
     "runtime-main.js.map": "/yi-new-react/static/js/runtime-main.3cbc59e6.js.map",
     "static/js/2.6df66e0e.chunk.js": "/yi-new-react/static/js/2.6df66e0e.chunk.js",
     "static/js/2.6df66e0e.chunk.js.map": "/yi-new-react/static/js/2.6df66e0e.chunk.js.map",
     "index.html": "/yi-new-react/index.html",
-    "static/css/main.2adfef67.chunk.css.map": "/yi-new-react/static/css/main.2adfef67.chunk.css.map",
+    "static/css/main.c594efe8.chunk.css.map": "/yi-new-react/static/css/main.c594efe8.chunk.css.map",
     "static/js/2.6df66e0e.chunk.js.LICENSE.txt": "/yi-new-react/static/js/2.6df66e0e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/yi-new-react/static/media/BankGothicMdBT-Medium.e2bf3a30.woff",
     "static/media/accessorize.8e7464aa.jpg": "/yi-new-react/static/media/accessorize.8e7464aa.jpg",
@@ -18,13 +18,17 @@
     "static/media/cindy.a829eac8.jpg": "/yi-new-react/static/media/cindy.a829eac8.jpg",
     "static/media/Button.css": "/yi-new-react/static/media/close.c852ed24.svg",
     "static/media/cool_casual_02.b316c2ed.jpg": "/yi-new-react/static/media/cool_casual_02.b316c2ed.jpg",
+    "static/media/gmail2.c31b4655.png": "/yi-new-react/static/media/gmail2.c31b4655.png",
+    "static/media/instagram2.b93bf398.png": "/yi-new-react/static/media/instagram2.b93bf398.png",
     "static/media/logo_black.19988a41.png": "/yi-new-react/static/media/logo_black.19988a41.png",
-    "static/media/logo_white.7a315f98.png": "/yi-new-react/static/media/logo_white.7a315f98.png"
+    "static/media/logo_white.7a315f98.png": "/yi-new-react/static/media/logo_white.7a315f98.png",
+    "static/media/telegram2.498d0ac1.png": "/yi-new-react/static/media/telegram2.498d0ac1.png",
+    "static/media/whatsapp2.d7f3c926.png": "/yi-new-react/static/media/whatsapp2.d7f3c926.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3cbc59e6.js",
     "static/js/2.6df66e0e.chunk.js",
-    "static/css/main.2adfef67.chunk.css",
-    "static/js/main.3b147922.chunk.js"
+    "static/css/main.c594efe8.chunk.css",
+    "static/js/main.944922b5.chunk.js"
   ]
 }
