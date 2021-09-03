@@ -2,5 +2,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: min(10px, 2vw);
+  gap: 50px;
 }

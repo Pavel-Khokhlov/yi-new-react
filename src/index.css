@@ -1,5 +1,6 @@
 @import url(./vendors/normalize.css);
 @import url(./block/title/title.css);
+@import url(./block/subtitle/subtitle.css);
 @import url(./block/paragraph/paragraph.css);
 @import url(./block/text-color/text-color.css);
 @import url(./block/text-size/text-size.css);
@@ -18,12 +19,12 @@
 body {
   margin: 0;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-size: 200;
+  font-weight: 200;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-size: 200;
+  font-weight: 200;
 }

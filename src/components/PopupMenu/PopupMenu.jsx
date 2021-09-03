@@ -4,8 +4,10 @@ import { NavLink } from "react-router-dom";
 import { TranslationContext } from "../../context/TranslationContext";
 
 import LogoPng from "../../images/logo_black.png";
-import InstagramPng from "../../images/insta_black.png";
-import TelegramPng from "../../images/telegram_black.png";
+import InstagramPng from "../../images/instagram2.png";
+import WhatsappPng from "../../images/whatsapp2.png";
+import TelegramPng from "../../images/telegram2.png";
+import GmailPng from "../../images/gmail2.png";
 import Button from "../Button/Button";
 
 import "./PopupMenu.css";
@@ -32,151 +34,172 @@ const PopupMenu = ({ isOpen, onCloseMenuClick, onEngClick, onRusClick }) => {
           onClick={onCloseMenuClick}
         />
       </NavLink>
-      <p className="paragraph paragraph__menu">{translation.menu_moscow}</p>
+      <h2 className="title title__menu">{translation.menu_moscow}</h2>
       <nav className="popup-menu__links">
         <NavLink
           to="/collection"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_collection}
         </NavLink>
         <NavLink
           to="/new"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_new}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/all"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_all}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/leather"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_leather}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/exclusive"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_exclusive}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/outwear"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_outwear}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/jumpsuits"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_jumpsuits}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/dresses"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_dresses}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/jackets"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_jackets_shirts}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/tops"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_tops}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/knitted"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_knitted}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/trousers"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_trousers}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/bags"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_bags}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/accessorize"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_accessorize}
         </NavLink>
         <NavLink
-          to="/"
-          className="paragraph__menu popup-menu__link"
+          to="/bijouterie"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_bijouterie}
         </NavLink>
         <NavLink
           to="/sale"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_sale}
         </NavLink>
         <NavLink
           to="/about"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_about}
         </NavLink>
         <NavLink
           to="/pay"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_pay}
         </NavLink>
         <NavLink
           to="/waiting-list"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_wait}
         </NavLink>
         <NavLink
           to="/refunds"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_refunds}
         </NavLink>
         <NavLink
           to="/contacts"
-          className="paragraph__menu popup-menu__link"
+          className="subtitle__menu popup-menu__link text-size__subtitle_m"
+          activeClassName="subtitle__menu_active"
           onClick={onCloseMenuClick}
         >
           {translation.menu_contacts}
@@ -226,7 +249,7 @@ const PopupMenu = ({ isOpen, onCloseMenuClick, onEngClick, onRusClick }) => {
           rel="noreferrer"
         >
           <img
-            src={InstagramPng}
+            src={WhatsappPng}
             alt="иконка whatsapp"
             className="popup-menu__icon"
           />
@@ -235,6 +258,15 @@ const PopupMenu = ({ isOpen, onCloseMenuClick, onEngClick, onRusClick }) => {
           <img
             src={TelegramPng}
             alt="иконка телеграм"
+            className="popup-menu__icon"
+            target="_blank"
+            rel="noreferrer"
+          />
+        </NavLink>
+        <NavLink to="/" className="popup-menu__link">
+          <img
+            src={GmailPng}
+            alt="иконка gmail"
             className="popup-menu__icon"
             target="_blank"
             rel="noreferrer"

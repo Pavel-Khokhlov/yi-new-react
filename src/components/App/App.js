@@ -22,6 +22,19 @@ import PopupMenu from "../PopupMenu/PopupMenu";
 import { ESC_CODE } from "../../utils/config";
 
 import "./App.css";
+import PageAll from "../PageAll/PageAll";
+import PageLeather from "../PageLeather/PageLeather";
+import PageExclusive from "../PageExclusive/PageLeather";
+import PageOutwear from "../PageOutwear/PageOutwear";
+import PageJumpsuits from "../PageJumpsuits/PageJumpsuits";
+import PageTrousers from "../PageTrousers/PageTrousers";
+import PageBags from "../PageBags/PageBags";
+import PageAccessorize from "../PageAccessorize/PageAccessorize";
+import PageBijouterie from "../PageBijouterie/PageBijouterie";
+import PageKnitted from "../PageKnitted/PageKnitted";
+import PageTops from "../PageTops/PageTops";
+import PageJackets from "../PageJackets/PageJackets";
+import PageDresses from "../PageDresses/PageDresses";
 
 const App = () => {
   const [lang, setLang] = useState("ru"); // present lang
@@ -66,6 +79,45 @@ const App = () => {
         </Route>
         <Route path="/new">
           <PageNew />
+        </Route>
+        <Route path="/all">
+          <PageAll />
+        </Route>
+        <Route path="/leather">
+          <PageLeather />
+        </Route>
+        <Route path="/exclusive">
+          <PageExclusive />
+        </Route>
+        <Route path="/outwear">
+          <PageOutwear />
+        </Route>
+        <Route path="/jumpsuits">
+          <PageJumpsuits />
+        </Route>
+        <Route path="/dresses">
+          <PageDresses />
+        </Route>
+        <Route path="/jackets">
+          <PageJackets />
+        </Route>
+        <Route path="/tops">
+          <PageTops />
+        </Route>
+        <Route path="/knitted">
+          <PageKnitted />
+        </Route>
+        <Route path="/trousers">
+          <PageTrousers />
+        </Route>
+        <Route path="/bags">
+          <PageBags />
+        </Route>
+        <Route path="/accessorize">
+          <PageAccessorize />
+        </Route>
+        <Route path="/bijouterie">
+          <PageBijouterie />
         </Route>
         <Route path="/sale">
           <PageSale />

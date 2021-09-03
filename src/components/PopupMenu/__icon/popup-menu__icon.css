@@ -1,4 +1,6 @@
 .popup-menu__icon {
-  width: min(25px, 6vw);
-  height: min(25px, 6vw);
+  width: min(30px, 7vw);
+  height: min(30px, 7vw);
+  /*-webkit-filter: drop-shadow(1px 1px 1px #000);
+  filter: drop-shadow(1px 1px 1px #000);*/
 }
