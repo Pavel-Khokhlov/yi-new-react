@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/yi-new-react/static/css/main.6e37c25f.chunk.css",
-    "main.js": "/yi-new-react/static/js/main.85a35615.chunk.js",
-    "main.js.map": "/yi-new-react/static/js/main.85a35615.chunk.js.map",
+    "main.css": "/yi-new-react/static/css/main.a9f1d4e0.chunk.css",
+    "main.js": "/yi-new-react/static/js/main.460a1cc6.chunk.js",
+    "main.js.map": "/yi-new-react/static/js/main.460a1cc6.chunk.js.map",
     "runtime-main.js": "/yi-new-react/static/js/runtime-main.3cbc59e6.js",
     "runtime-main.js.map": "/yi-new-react/static/js/runtime-main.3cbc59e6.js.map",
     "static/js/2.6df66e0e.chunk.js": "/yi-new-react/static/js/2.6df66e0e.chunk.js",
     "static/js/2.6df66e0e.chunk.js.map": "/yi-new-react/static/js/2.6df66e0e.chunk.js.map",
     "index.html": "/yi-new-react/index.html",
-    "static/css/main.6e37c25f.chunk.css.map": "/yi-new-react/static/css/main.6e37c25f.chunk.css.map",
+    "static/css/main.a9f1d4e0.chunk.css.map": "/yi-new-react/static/css/main.a9f1d4e0.chunk.css.map",
     "static/js/2.6df66e0e.chunk.js.LICENSE.txt": "/yi-new-react/static/js/2.6df66e0e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/yi-new-react/static/media/BankGothicMdBT-Medium.e2bf3a30.woff",
-    "static/media/accessorize.b4bfc1c3.jpg": "/yi-new-react/static/media/accessorize.b4bfc1c3.jpg",
+    "static/media/accessorize.4485bef8.jpg": "/yi-new-react/static/media/accessorize.4485bef8.jpg",
     "static/media/account_white.cdc1e444.png": "/yi-new-react/static/media/account_white.cdc1e444.png",
-    "static/media/bags.2aefb5ad.jpg": "/yi-new-react/static/media/bags.2aefb5ad.jpg",
+    "static/media/bags.e740aa54.jpg": "/yi-new-react/static/media/bags.e740aa54.jpg",
     "static/media/basket_white.83db9330.png": "/yi-new-react/static/media/basket_white.83db9330.png",
-    "static/media/bijouterie.93049b3c.jpg": "/yi-new-react/static/media/bijouterie.93049b3c.jpg",
+    "static/media/bijouterie.25123ef9.jpg": "/yi-new-react/static/media/bijouterie.25123ef9.jpg",
     "static/media/Button.css": "/yi-new-react/static/media/close.c852ed24.svg",
-    "static/media/collection.34089b5c.jpg": "/yi-new-react/static/media/collection.34089b5c.jpg",
-    "static/media/cool_casual_02.b316c2ed.jpg": "/yi-new-react/static/media/cool_casual_02.b316c2ed.jpg",
+    "static/media/collection.3c91133d.jpg": "/yi-new-react/static/media/collection.3c91133d.jpg",
     "static/media/gmail2.c31b4655.png": "/yi-new-react/static/media/gmail2.c31b4655.png",
     "static/media/instagram2.b93bf398.png": "/yi-new-react/static/media/instagram2.b93bf398.png",
     "static/media/logo_black.19988a41.png": "/yi-new-react/static/media/logo_black.19988a41.png",
@@ -29,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.3cbc59e6.js",
     "static/js/2.6df66e0e.chunk.js",
-    "static/css/main.6e37c25f.chunk.css",
-    "static/js/main.85a35615.chunk.js"
+    "static/css/main.a9f1d4e0.chunk.css",
+    "static/js/main.460a1cc6.chunk.js"
   ]
 }
