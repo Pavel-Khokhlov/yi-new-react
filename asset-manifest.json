@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yi-new-react/static/css/main.6e37c25f.chunk.css",
-    "main.js": "/yi-new-react/static/js/main.0e45c1bd.chunk.js",
-    "main.js.map": "/yi-new-react/static/js/main.0e45c1bd.chunk.js.map",
+    "main.js": "/yi-new-react/static/js/main.85a35615.chunk.js",
+    "main.js.map": "/yi-new-react/static/js/main.85a35615.chunk.js.map",
     "runtime-main.js": "/yi-new-react/static/js/runtime-main.3cbc59e6.js",
     "runtime-main.js.map": "/yi-new-react/static/js/runtime-main.3cbc59e6.js.map",
     "static/js/2.6df66e0e.chunk.js": "/yi-new-react/static/js/2.6df66e0e.chunk.js",
@@ -11,12 +11,13 @@
     "static/css/main.6e37c25f.chunk.css.map": "/yi-new-react/static/css/main.6e37c25f.chunk.css.map",
     "static/js/2.6df66e0e.chunk.js.LICENSE.txt": "/yi-new-react/static/js/2.6df66e0e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/yi-new-react/static/media/BankGothicMdBT-Medium.e2bf3a30.woff",
-    "static/media/accessorize.8e7464aa.jpg": "/yi-new-react/static/media/accessorize.8e7464aa.jpg",
+    "static/media/accessorize.b4bfc1c3.jpg": "/yi-new-react/static/media/accessorize.b4bfc1c3.jpg",
     "static/media/account_white.cdc1e444.png": "/yi-new-react/static/media/account_white.cdc1e444.png",
+    "static/media/bags.2aefb5ad.jpg": "/yi-new-react/static/media/bags.2aefb5ad.jpg",
     "static/media/basket_white.83db9330.png": "/yi-new-react/static/media/basket_white.83db9330.png",
-    "static/media/bijouterie.30bf0c3f.jpg": "/yi-new-react/static/media/bijouterie.30bf0c3f.jpg",
-    "static/media/cindy.a829eac8.jpg": "/yi-new-react/static/media/cindy.a829eac8.jpg",
+    "static/media/bijouterie.93049b3c.jpg": "/yi-new-react/static/media/bijouterie.93049b3c.jpg",
     "static/media/Button.css": "/yi-new-react/static/media/close.c852ed24.svg",
+    "static/media/collection.34089b5c.jpg": "/yi-new-react/static/media/collection.34089b5c.jpg",
     "static/media/cool_casual_02.b316c2ed.jpg": "/yi-new-react/static/media/cool_casual_02.b316c2ed.jpg",
     "static/media/gmail2.c31b4655.png": "/yi-new-react/static/media/gmail2.c31b4655.png",
     "static/media/instagram2.b93bf398.png": "/yi-new-react/static/media/instagram2.b93bf398.png",
@@ -29,6 +30,6 @@
     "static/js/runtime-main.3cbc59e6.js",
     "static/js/2.6df66e0e.chunk.js",
     "static/css/main.6e37c25f.chunk.css",
-    "static/js/main.0e45c1bd.chunk.js"
+    "static/js/main.85a35615.chunk.js"
   ]
 }
