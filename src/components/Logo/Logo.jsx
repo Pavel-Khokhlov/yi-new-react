@@ -8,7 +8,7 @@ import "./Logo.css";
 const Logo = () => {
   return (
     <NavLink to="/" className="logo__header" >
-      <img src={LogoPng} alt="логотип" className="button logo" />
+      <img src={LogoPng} alt="логотип" className="button logo" aria-label="IRINA YUZIFOVICH"/>
     </NavLink>
   );
 };

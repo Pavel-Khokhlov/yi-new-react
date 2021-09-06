@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Route, Switch } from "react-router-dom";
+import { useSelector } from "react-redux";
+// import { fetchSubscibers } from "../../store/subscriberSlice";
 
 import {
   TranslationContext,
@@ -38,10 +40,16 @@ import PageDresses from "../PageDresses/PageDresses";
 
 const App = () => {
   const [lang, setLang] = useState("ru"); // present lang
+  const { subscribers, status, error } = useSelector(
+    (state) => state.subscribers
+  );
+
   const [isPopupMenuOpen, setIsPopupMenuOpen] = useState(false);
 
+  console.log(subscribers);
+
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
   console.log(vh);
 
   const handleEsc = (e) => (e.keyCode === ESC_CODE ? handleClosePopup() : "");
@@ -56,23 +64,21 @@ const App = () => {
   const handleMenuClick = () => {
     setIsPopupMenuOpen(true);
     window.addEventListener("keydown", handleEsc);
-  }
+  };
 
   const handleClosePopup = () => {
     setIsPopupMenuOpen(false);
     window.removeEventListener("keydown", handleEsc);
   };
 
-  const handleSubmitClick = () => {
-    console.log(`fuck`)
-  }
-
   return (
     <TranslationContext.Provider value={translations[lang]}>
       <Header onOpenMenuClick={handleMenuClick} />
+      {status === "loading" && <h2>Loading</h2>}
+      {error && <h2>ERROR OCCURED {error}</h2>}
       <Switch>
         <Route exact path="/">
-          <PageMain onSubmit={handleSubmitClick} />
+          <PageMain />
         </Route>
         <Route path="/collection">
           <PageCollection />

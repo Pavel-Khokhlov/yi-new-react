@@ -1,4 +1,12 @@
-import CollectionFoto from "../images/cool_casual_02.jpg";
+//import { useContext } from 'react';
+import CollectionFoto from "../images/collection.jpg";
+//import { TranslationContext } from "../../context/TranslationContext";
+export const REG_EMAIL = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+export const PATTERN_EMAIL = `[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i`;
+export const REG_PASSWORD =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9_]).{8,}/;
+export const PATTERN_PASSWORD = `(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9_]).{8,}`;
+// const translation = useContext(TranslationContext);
 
 export const ESC_CODE = 27;
 

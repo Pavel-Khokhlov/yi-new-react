@@ -9,7 +9,6 @@ import BasketPng from '../../images/basket_white.png';
 import "./Header.css";
 
 const Header = ({ onOpenMenuClick }) => {
-  const newHeader = false;
   const [lastYPos, setLastYPos] = useState(0);
   const [headerClassName, setHeaderClassName] = useState(`header`);
 

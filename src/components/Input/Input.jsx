@@ -10,6 +10,7 @@ const Input = ({
   value,
   errors,
   formDisabled,
+  minLength,
 }) => {
   const [focus, setFocus] = useState(false);
   const handleFocus = (e) => {
@@ -19,7 +20,7 @@ const Input = ({
     setFocus(false);
   };
 
-  const labelClassName = `paragraph paragraph__label paragraph__color_grey input__label ${focus ? "input__label_focus" : "input__label_blur"}` 
+  const labelClassName = `paragraph paragraph__label paragraph__color_grey input__label ${focus || value.length ? "input__label_focus" : "input__label_blur"}` 
   return (
     <label className="input">
       <p className={labelClassName}>
@@ -35,6 +36,7 @@ const Input = ({
         onFocus={handleFocus}
         onBlur={handleBlur}
         disabled={formDisabled}
+        minLength={minLength}
         required
       />
       <p className="input__error">{errors}</p>

@@ -1,18 +1,17 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import FormSection from "../FormSection/FormSection";
-import Input from "../Input/Input";
 
 import { TranslationContext } from "../../context/TranslationContext";
 
-import CollectionFoto from "../../images/cool_casual_02.jpg";
-import BagFoto from "../../images/cindy.jpg";
+import CollectionFoto from "../../images/collection.jpg";
+import BagFoto from "../../images/bags.jpg";
 import AccessorizeFoto from "../../images/accessorize.jpg";
 import BijouterieFoto from "../../images/bijouterie.jpg";
 
 import "./PageMain.css";
 
-const PageMain = ({ onSubmit }) => {
+const PageMain = () => {
   const translation = useContext(TranslationContext);
   const mainLinks = [
     {
@@ -52,24 +51,7 @@ const PageMain = ({ onSubmit }) => {
           })}
         </ul>
       </section>
-      <FormSection
-        onSubmit={onSubmit}
-        sendButtonName={translation.main_form_button}
-        privacy={translation.main_form_privacy}
-        title={translation.main_form_title}
-        paragraph={translation.main_form_paragraph}
-      >
-        <Input
-          type="text"
-          inputName="name"
-          labelName={translation.main_form_labelname}
-        />
-        <Input
-          type="email"
-          inputName="email"
-          labelName={translation.main_form_labelemail}
-        />
-      </FormSection>
+      <FormSection />
     </>
   );
 };

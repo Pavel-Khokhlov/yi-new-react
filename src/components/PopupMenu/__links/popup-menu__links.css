@@ -2,5 +2,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: calc(var(--vh, 1vh) * 5);
 }
