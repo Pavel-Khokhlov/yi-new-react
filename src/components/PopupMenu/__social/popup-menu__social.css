@@ -1,6 +1,0 @@
-.popup-menu__social {
-  display: flex;
-  justify-content: center;
-  gap: min(40px, 10vw);
-  margin-bottom: min(30px, 5vw);
-}

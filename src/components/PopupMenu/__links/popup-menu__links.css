@@ -1,6 +1,0 @@
-.popup-menu__links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: calc(var(--vh, 1vh) * 5);
-}

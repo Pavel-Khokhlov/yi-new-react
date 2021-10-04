@@ -1,8 +1,11 @@
 .form__container {
   width: min(400px, 70vw);
   margin: 0 auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: calc(var(--vh, 1vh) * 2);
+}
+
+.form__container .paragraph:last-of-type {
+  margin-bottom: 0;
 }

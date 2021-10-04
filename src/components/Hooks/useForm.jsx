@@ -1,8 +1,11 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useContext } from "react";
+
+import { TranslationContext } from "../../context/TranslationContext";
 
 import { REG_EMAIL, REG_PASSWORD } from "../../utils/config";
 
 export function useFormWithValidation() {
+  const translation = useContext(TranslationContext);
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   const [isValid, setIsValid] = useState(false);
@@ -10,10 +13,10 @@ export function useFormWithValidation() {
   const validateMessage = (target) => {
     if (target.name === "name") {
       if (target.value.length === 0) {
-        return "Необходимо ввести имя";
+        return translation.valid_name_empty;
       }
       if (target.value.length < 2) {
-        return "Имя должено быть больше 2 символов";
+        return translation.valid_name_minlength;
       }
       return "";
     }
@@ -26,16 +29,25 @@ export function useFormWithValidation() {
       }
       return "";
     }
-    if (target.name === "email") {
+    if (target.name === "phone") {
       if (target.value.length === 0) {
-        return "Необходимо ввести E-mail!";
+        return "Необходимо ввести номер";
       }
-      if (!REG_EMAIL.test(target.value)) {
-        return "Введите корректный E-mail!";
+      if (target.value.length < 10) {
+        return "Номер телефона должен быть не меньше 10 цифр";
       }
       return "";
     }
-    if (target.name === "password") {
+    if (target.name === "email") {
+      if (target.value.length === 0) {
+        return translation.valid_email_empty;
+      }
+      if (!REG_EMAIL.test(target.value)) {
+        return translation.valid_email_correct;
+      }
+      return "";
+    }
+    if (target.name === "password1") {
       if (target.value.length === 0) {
         return "Необходимо ввести пароль!";
       }
@@ -44,6 +56,15 @@ export function useFormWithValidation() {
       }
       if (!REG_PASSWORD.test(target.value)) {
         return "Пароль должен содержать цифры, символы, строчные и прописные буквы!";
+      }
+      return "";
+    }
+    if (target.name === "password2") {
+      if (target.value.length === 0) {
+        return "Необходимо ввести пароль!";
+      }
+      if (target.value !== values.password1) {
+        return "Пароли не совпадают!";
       }
       return "";
     }

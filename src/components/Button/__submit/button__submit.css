@@ -1,0 +1,10 @@
+@import url(./_valid/button__submit_valid.css);
+@import url(./_invalid/button__submit_invalid.css);
+
+.button__submit {
+  height: calc(var(--vh, 1vh) * 5);
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+}

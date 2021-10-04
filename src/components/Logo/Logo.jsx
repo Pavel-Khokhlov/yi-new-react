@@ -1,14 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import LogoPng from "../../images/logo_white.png";
-
 import "./Logo.css";
 
-const Logo = () => {
+const Logo = ({ src, className, onClick }) => {
   return (
-    <NavLink to="/" className="logo__header" >
-      <img src={LogoPng} alt="логотип" className="button logo" aria-label="IRINA YUZIFOVICH"/>
+    <NavLink to="/">
+      <img src={src} alt="главный логотип" className={className} onClick={onClick} />
     </NavLink>
   );
 };

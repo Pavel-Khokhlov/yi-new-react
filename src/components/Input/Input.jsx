@@ -20,7 +20,8 @@ const Input = ({
     setFocus(false);
   };
 
-  const labelClassName = `paragraph paragraph__label paragraph__color_grey input__label ${focus || value.length ? "input__label_focus" : "input__label_blur"}` 
+  const labelClassName = `paragraph paragraph__label paragraph__color_grey input__label ${focus || value !== '' ? "input__label_focus" : "input__label_blur"}` 
+
   return (
     <label className="input">
       <p className={labelClassName}>
@@ -32,7 +33,7 @@ const Input = ({
         id={inputName}
         className="input__field"
         onChange={onChange}
-        value={value || ""}
+        value={value}
         onFocus={handleFocus}
         onBlur={handleBlur}
         disabled={formDisabled}

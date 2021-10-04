@@ -4,7 +4,6 @@
 .input__label {
   width: 100%;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   transition: 0.8s ease-in-out;
 }

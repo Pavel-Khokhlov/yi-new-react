@@ -1,0 +1,6 @@
+.button__submit_invalid {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  cursor: not-allowed !important;
+}

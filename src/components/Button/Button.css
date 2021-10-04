@@ -1,12 +1,11 @@
 @import url(./__menu/button__menu.css);
-@import url(./__lang/button__lang.css);
 @import url(./__close-popup/button__close-popup.css);
-@import url(./__back/button__back.css);
-@import url(./__subscribe/button__subscribe.css);
+@import url(./__close-menu/button__close-menu.css);
+@import url(./__word/button__word.css);
+@import url(./__submit/button__submit.css);
 
 .button {
   /* сброс стилей */
-  text-decoration: none;
   cursor: pointer;
   /* настройки кнопок */
   opacity: 1;

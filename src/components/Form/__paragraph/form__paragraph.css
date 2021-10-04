@@ -1,0 +1,6 @@
+.form__paragraph {
+  width: calc(100% - min(20px, 5vw) * 2);
+  padding: 0 min(20px, 5vw);
+  margin-top: 0;
+  text-align: justify;
+}

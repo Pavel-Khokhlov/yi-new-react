@@ -1,14 +1,14 @@
 .button__close-popup {
-  width: min(20px, 5vw);
-  height: min(20px, 5vw);
-  border: none;
-  margin: 0;
-  padding: 0;
   position: absolute;
-  top: min(20px, 2vw);
-  right: min(20px, 2vw);
-  background: transparent;
-  background-image: url("../../../images/close.svg");
+  width: 33px;
+  height: 33px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  top: -33px;
+  right: -33px;
+  background-color: transparent;
+  background-image: url(../../../images/close_white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;

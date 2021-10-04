@@ -1,0 +1,6 @@
+.popup-menu_closed {
+  left: -110%;
+  right: 110%;
+  visibility: hidden;
+  opacity: 0;
+}

@@ -1,63 +1,96 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-export const fetchSubscibers = createAsyncThunk(
-  "subscribers/fetchSubscribers",
-  async function (_, { rejectWithValue }) {
+import { BASE_URL } from "../utils/config";
+
+export const fetchSubsciber = createAsyncThunk(
+  "subscribers/fetchSubsciber",
+  async function ({ name, email }, thunkAPI) {
     try {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/users"
-      );
-      if (!response.ok) {
-        throw new Error('SERVER ERROR!');
+      const response = await fetch(BASE_URL, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email }),
+      });
+      let data = await response.json();
+      if (response.ok) {
+        return { ...data, name: name, email: email };
+      } else {
+        return thunkAPI.rejectWithValue(data.message);
       }
-        const data = await response.json();
-        return data;
     } catch (error) {
-      console.log(error);
-      return rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
 
+export const deleteSubscriber = createAsyncThunk(
+  "subscribers/deleteSubscriber",
+  async function (email, thunkAPI) {
+    try {
+      const response = await fetch(BASE_URL, {
+        method: "DELETE",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(email),
+      });
+      let data = await response.json();
+      if (response.ok) {
+        return { ...data, email: email };
+      } else {
+        return thunkAPI.rejectWithValue(data.message);
+      }
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
+
+const setError = (state, action) => {
+  state.status = false;
+  state.error = action.payload;
+};
+
+const setLoading = (state) => {
+  state.status = "loading";
+      state.tooltip = null;
+      state.error = null;
+};
+
 const subscriberSlice = createSlice({
   name: "subscribers",
   initialState: {
-    subscribers: [],
+    subscriber: {},
+    tooltip: null,
     status: null,
     error: null,
   },
-  reducers: {
-    addSubscriber(state, action) {
-      state.subscribers.push({
-        id: new Date().toISOString(),
-        name: action.payload.name,
-        email: action.payload.email,
-      });
-    },
-    removeSubscriber(state, action) {
-      state.subscribers = state.subscribers.filter(
-        (subscriber) => subscriber.email !== action.payload.subscriber.email
-      );
-    },
-    getSubscribers(state, action) {},
-  },
   extraReducers: {
-    [fetchSubscibers.pending]: (state) => {
-      state.status = "loading";
+    [fetchSubsciber.pending]: setLoading,
+    [deleteSubscriber.pending]: setLoading,
+    [fetchSubsciber.fulfilled]: (state, action) => {
+      state.status = true;
       state.error = null;
+      state.tooltip = {
+        name: action.payload.name,
+        message: `Cпасибо за подписку!`,
+      };
     },
-    [fetchSubscibers.fulfilled]: (state, action) => {
-      state.status = "resolved";
-      state.subscribers = action.payload;
+    [deleteSubscriber.fulfilled]: (state, action) => {
+      state.status = true;
+      state.error = null;
+      state.tooltip = {
+        name: action.payload.name,
+        message: `Опс, мы будем скучать!`,
+      };
     },
-    [fetchSubscibers.rejected]: (state, action) => {
-      state.status = "rejected";
-      state.error = action.payload;
-    },
+    [fetchSubsciber.rejected]: setError,
+    [deleteSubscriber.rejected]: setError,
   },
 });
-
-export const { addSubscriber, removeSubscriber, getSubscribers } =
-  subscriberSlice.actions;
 
 export default subscriberSlice.reducer;

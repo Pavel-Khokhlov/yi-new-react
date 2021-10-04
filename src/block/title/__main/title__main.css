@@ -1,0 +1,12 @@
+.title__main {
+  letter-spacing: 6px;
+  font-weight: 400;
+  padding: 0 10px 0 16px;
+  text-transform: uppercase;
+  line-height: 2;
+  position: absolute;
+  bottom: calc(var(--vh, 1vh) * 10);
+  right: 50%;
+  transform: translateX(50%);
+  background-color: rgba(0, 0, 0, 0.7);
+}

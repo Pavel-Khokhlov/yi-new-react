@@ -2,8 +2,8 @@
 @import url(./__paragraph/form__paragraph.css);
 
 .form {
-  height: 75vh;
-  height: calc(var(--vh, 1vh) * 75);
+  /* height: 75vh;
+  height: calc(var(--vh, 1vh) * 75); */
   display: flex;
   align-items: center;
 }

@@ -1,8 +1,0 @@
-@import url(./_valid/button__subscribe_valid.css);
-@import url(./_invalid/button__subscribe_invalid.css);
-
-.button__subscribe {
-  height: calc(var(--vh, 1vh) * 5);
-  border-radius: 3px;
-  font-weight: bold;
-}

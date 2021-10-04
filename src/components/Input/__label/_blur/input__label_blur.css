@@ -1,4 +1,4 @@
 .input__label_blur {
-  top: 5px;
-  font-size: min(14px, 4vw);
+  top: min(6px, 2vw);
+  font-size: min(16px, 3vw);
 }

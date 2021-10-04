@@ -1,0 +1,24 @@
+@import url(./__links/popup-menu__links.css);
+@import url(./__link/popup-menu__link.css);
+@import url(./__lang/popup-menu__lang.css);
+@import url(./__social/popup-menu__social.css);
+@import url(./__icon/popup-menu__icon.css);
+@import url(./_opened/popup-menu_opened.css);
+@import url(./_closed/popup-menu_closed.css);
+
+.popup-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  /* height: calc(var(--vh, 1vh) * 100); */
+  overflow: auto;
+  background-color: #ffffff;
+  box-shadow: 7px 0 7px rgba(0, 0, 0, 0.1);
+  transition: 0.5s linear;
+  text-align: center;
+  z-index: 10;
+}

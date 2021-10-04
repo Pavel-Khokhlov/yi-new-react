@@ -1,17 +1,20 @@
 .input__field {
   width: 100%;
+  font-size: min(20px, 4vw);
+  font-weight: bold;
+  letter-spacing: 2px;
   background-color: transparent;
   outline: none;
   margin: 0;
-  line-height: 2;
+  line-height: 1.4;
   border: none;
   border-bottom: 1px solid #a0a0a0;
   box-sizing: border-box;
-  text-align: center;
+  transition: 0.8s ease;
 }
 
 .input__field:focus {
-  box-shadow: 0 0 4px rgba(52, 86, 243, 0.8);
+  box-shadow: 0 0 4px rgba(52, 86, 243, 0.6);
 }
 
 .input__field:-webkit-autofill,
@@ -21,5 +24,4 @@
 {
  -webkit-background-clip: text;
  -webkit-border-image: none;
- font-size: 13px;
 } 

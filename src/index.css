@@ -1,4 +1,5 @@
 @import url(./vendors/normalize.css);
+@import url(./block/section/section.css);
 @import url(./block/title/title.css);
 @import url(./block/subtitle/subtitle.css);
 @import url(./block/paragraph/paragraph.css);

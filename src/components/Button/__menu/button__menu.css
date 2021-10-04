@@ -1,12 +1,14 @@
+@import url(./_main/button__menu_main.css);
+@import url(./_other/button__menu_other.css);
+
 .button__menu {
   padding: 0;
   margin: 0;
-  width: min(25px, 6vw);
-  height: min(16px, 4vw);
+  width: min(30px, 7vw);
+  height: min(30px, 7vw);
   border: none;
-  background-image: url("../../../images/menu_white.png");
   background-color: transparent;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }

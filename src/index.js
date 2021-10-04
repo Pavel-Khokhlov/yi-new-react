@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import React from "react";
 import { render } from "react-dom";
 import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
@@ -7,12 +7,12 @@ import "./index.css";
 import App from "./components/App/App";
 
 render(
-  <StrictMode>
+  <React.StrictMode>
     <HashRouter>
       <Provider store={store}>
         <App />
       </Provider>
     </HashRouter>
-  </StrictMode>,
+  </React.StrictMode>,
   document.getElementById("root")
 );

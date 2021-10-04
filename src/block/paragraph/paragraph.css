@@ -1,6 +1,6 @@
 @import url(./__menu/paragraph__menu.css);
 @import url(./__link/paragraph__link.css);
+@import url(./__label/paragraph__label.css);
 
 .paragraph {
-  margin: 0;
 }

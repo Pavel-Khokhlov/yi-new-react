@@ -4,3 +4,7 @@
   position: relative;
   z-index: 0;
 }
+
+.main__link:hover .main__overlay {
+  opacity: 1;
+}

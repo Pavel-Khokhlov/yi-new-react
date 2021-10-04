@@ -1,7 +1,12 @@
-import { useState } from "react";
-import { Route, Switch } from "react-router-dom";
-import { useSelector } from "react-redux";
-// import { fetchSubscibers } from "../../store/subscriberSlice";
+import { useState, useEffect } from "react";
+import { withRouter, Route, Switch } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  setCurrentPath,
+  closeAllPopups,
+  openMenuPopup,
+  openUnsubscribePopup,
+} from "../../store/appSlice";
 
 import {
   TranslationContext,
@@ -18,8 +23,10 @@ import PagePay from "../PagePay/PagePay";
 import PageWait from "../PageWait/PageWait";
 import PageRefunds from "../PageRefunds/PageRefunds";
 import PageContacts from "../PageContacts/PageContacts";
+import PageSignup from "../PageSignup/PageSignup";
+import PageSignin from "../PageSignin/PageSignin";
 import Footer from "../Footer/Footer";
-import PopupMenu from "../PopupMenu/PopupMenu";
+import PopupWithMenu from "../Popup/PopupWithMenu/PopupWithMenu";
 
 import { ESC_CODE } from "../../utils/config";
 
@@ -37,22 +44,34 @@ import PageKnitted from "../PageKnitted/PageKnitted";
 import PageTops from "../PageTops/PageTops";
 import PageJackets from "../PageJackets/PageJackets";
 import PageDresses from "../PageDresses/PageDresses";
+import UnsubscribePopup from "../Popup/UnsubscribePopup";
+import PageBasket from "../PageBasket/PageBasket";
 
-const App = () => {
+const App = ({ location }) => {
   const [lang, setLang] = useState("ru"); // present lang
-  const { subscribers, status, error } = useSelector(
+  const { subscriber } = useSelector(
     (state) => state.subscribers
   );
 
-  const [isPopupMenuOpen, setIsPopupMenuOpen] = useState(false);
+  const { currentPath, isLoggedIn, isUnsubscribePopupOpen, isMenuPopupOpen } = useSelector(
+    (state) => state.app
+  );
 
-  console.log(subscribers);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const { pathname } = location;
+    dispatch(setCurrentPath(pathname));
+  }, [location]);
+
+  console.log(subscriber);
 
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   console.log(vh);
 
-  const handleEsc = (e) => (e.keyCode === ESC_CODE ? handleClosePopup() : "");
+  const handleEsc = (e) =>
+    e.keyCode === ESC_CODE ? handleCloseAllPopups() : "";
 
   const handleSetRus = () => {
     setLang("ru");
@@ -62,23 +81,26 @@ const App = () => {
   };
 
   const handleMenuClick = () => {
-    setIsPopupMenuOpen(true);
+    dispatch(openMenuPopup());
     window.addEventListener("keydown", handleEsc);
   };
 
-  const handleClosePopup = () => {
-    setIsPopupMenuOpen(false);
+  const handleUnsubscribeClick = () => {
+    dispatch(openUnsubscribePopup());
+    window.addEventListener("keydown", handleEsc);
+  };
+
+  const handleCloseAllPopups = () => {
+    dispatch(closeAllPopups());
     window.removeEventListener("keydown", handleEsc);
   };
 
   return (
     <TranslationContext.Provider value={translations[lang]}>
-      <Header onOpenMenuClick={handleMenuClick} />
-      {status === "loading" && <h2>Loading</h2>}
-      {error && <h2>ERROR OCCURED {error}</h2>}
+      <Header onMenuClick={handleMenuClick} />
       <Switch>
         <Route exact path="/">
-          <PageMain />
+          <PageMain onUnsubscribeClick={handleUnsubscribeClick} />
         </Route>
         <Route path="/collection">
           <PageCollection />
@@ -143,11 +165,21 @@ const App = () => {
         <Route path="/contacts">
           <PageContacts />
         </Route>
+        <Route path="/basket">
+          <PageBasket />
+        </Route>
+        <Route path="/signup">
+          <PageSignup />
+        </Route>
+        <Route path="/signin">
+          <PageSignin />
+        </Route>
       </Switch>
-      <Footer />
-      <PopupMenu
-        isOpen={isPopupMenuOpen}
-        onCloseMenuClick={handleClosePopup}
+      {isLoggedIn || currentPath === '/' ? <Footer /> : ""}
+      <UnsubscribePopup />
+      <PopupWithMenu
+        isOpen={isMenuPopupOpen}
+        onClose={handleCloseAllPopups}
         onEngClick={handleSetEng}
         onRusClick={handleSetRus}
       />
@@ -155,4 +187,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withRouter(App);
